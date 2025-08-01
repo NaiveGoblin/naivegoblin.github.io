@@ -226,6 +226,7 @@ h1, h2, h3, h4, h5, h6{
 
 .form_box{
   width: 70%;
+  max-width: 650px;
   margin: auto auto;
   border-radius: 35px;
   padding: 35px 0 55px 0;
@@ -265,6 +266,7 @@ input{
 
 textarea{
   width: 90%;
+  height: 150px;
   display: block;
   resize: none;
 }
