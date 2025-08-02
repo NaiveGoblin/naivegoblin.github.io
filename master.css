@@ -126,16 +126,10 @@ h1, h2, h3, h4, h5, h6{
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-  margin: 0 5px 10px 0;
-  overflow: visible;
   padding: 12px 40px;
   text-align: center;
-  text-transform: none;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+  display: block;
+  margin:auto;
 }
 
 .button-50:focus {
@@ -162,13 +156,12 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
-
 /*SECTION MAIN*/
 /*----------------------------------------*/
 
 .section-home{
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,6 +197,51 @@ h1, h2, h3, h4, h5, h6{
   margin-top: 100px;
 }
 
+/*PRICES*/
+/*----------------------------------------*/
+.pricing{
+  margin: auto;
+  padding-bottom: 75px;
+  width: 80%;
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+}
+
+.packet{
+  width: 350px;
+  min-height: 350px;
+  background-color: black;
+  border-radius: 35px;
+  border: 2px solid #00FF00;
+  padding: 15px 0 35px 0;
+  box-sizing: border-box;
+}
+
+.packet hr{
+  width: 100%;
+}
+
+.packet h2, .packet h3 {
+  text-align: center;
+  color: #00FF00;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+
+.packet li{
+  text-align: left;
+  color: #00FF00;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
 /*SECTION PORTFOLIO*/
 /*----------------------------------------*/
 .section-portfolio{
@@ -262,6 +300,10 @@ form{
 
 input{
   width: 90%;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 textarea{
@@ -269,6 +311,9 @@ textarea{
   height: 150px;
   display: block;
   resize: none;
+  border-radius: 15px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 label{
