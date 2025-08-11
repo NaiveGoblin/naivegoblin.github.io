@@ -18,7 +18,7 @@ header{
 
 header > *{
   width: 100%;
-  height: 6vh;
+  min-height: 6vh;
 }
 
 header .nav{
@@ -51,7 +51,6 @@ header .nav > *:hover{
 header img{
   display: none;
 }
-
 
 /*FOOTER*/
 /*----------------------------------------*/
@@ -161,7 +160,7 @@ h1, h2, h3, h4, h5, h6{
 
 .section-home{
   width: 100%;
-  height: 80vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,51 +196,30 @@ h1, h2, h3, h4, h5, h6{
   margin-top: 100px;
 }
 
-/*PRICES*/
+/*Secondary Section*/
 /*----------------------------------------*/
-.pricing{
-  margin: auto;
-  padding-bottom: 75px;
-  width: 80%;
+.Secondary_Section{
   min-height: 60vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  gap: 20px 0;
 }
 
-.packet{
-  margin: 0 auto 0 auto;
-  width: 350px;
-  min-height: 350px;
-  background-color: black;
-  border-radius: 35px;
-  border: 2px solid #00FF00;
-  padding: 15px 0 35px 0;
-  box-sizing: border-box;
-}
-
-.packet hr{
-  width: 100%;
-}
-
-.packet h2, .packet h3 {
+.Secondary_Section h2{
+  font-size: 35px;
+  color: #00FF00;
+  margin: auto;
   text-align: center;
-  color: #00FF00;
-  font-family: "Google Sans Code", monospace;
+  margin-bottom: 30px;
+  
+
+
+
+  font-family: "Mozilla Headline", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  padding-bottom: 15px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
-.packet li{
-  text-align: left;
-  color: #00FF00;
-  font-family: "Google Sans Code", monospace;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  padding-bottom: 15px;
-}
 /*SECTION PORTFOLIO*/
 /*----------------------------------------*/
 .section-portfolio{
@@ -249,6 +227,67 @@ h1, h2, h3, h4, h5, h6{
   height: 120vh;
   background-color: black;
 }
+
+/*Card Drawer*/
+/*----------------------------------------*/
+.Drawer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  margin: 35px auto;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.Drawer > div{
+  width: 350px;
+  height: 350px;
+  background-color: black;
+  border: solid #00FF00 1px;
+  box-shadow: 6px 7px 0px 0px rgba(1,61,1,1);
+  color: #00FF00;
+}
+
+.Drawer div h4{
+  font-size: 22px;
+  margin: 16px 20px 10px 20px;
+}
+
+.Drawer div p{
+  margin: 15px 35px;
+  
+  font-size: 15px;
+  font-weight: 350;
+}
+
+.Drawer div h6{
+  margin: 15px 35px;
+  
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.Tag_Drawer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 25px;
+}
+
+.Tag_Drawer div{
+  font-size: 13px;
+  padding: 3px 10px;
+  transform: skewX(18deg);
+  color: white;
+}
+
 
 /*SECTION CONTACTS*/
 /*----------------------------------------*/
