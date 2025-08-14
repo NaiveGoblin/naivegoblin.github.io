@@ -5,6 +5,11 @@ body{
   background-color: black;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /*HEADER*/
 /*----------------------------------------*/
 
@@ -246,11 +251,12 @@ h1, h2, h3, h4, h5, h6{
 
 .Drawer > div{
   width: 350px;
-  height: 350px;
+  min-height: 350px;
   background-color: black;
   border: solid #00FF00 1px;
   box-shadow: 6px 7px 0px 0px rgba(1,61,1,1);
   color: #00FF00;
+  padding-bottom: 25px;
 }
 
 .Drawer div h4{
@@ -259,14 +265,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .Drawer div p{
-  margin: 15px 35px;
-  
+  margin: 25px 35px;
+  min-height: 150px;
   font-size: 15px;
   font-weight: 350;
 }
 
 .Drawer div h6{
-  margin: 15px 35px;
+  margin: 0px 35px;
   
   font-size: 14px;
   font-weight: 500;
@@ -305,16 +311,16 @@ h1, h2, h3, h4, h5, h6{
   width: 70%;
   max-width: 650px;
   margin: auto auto;
-  border-radius: 35px;
   padding: 35px 0 55px 0;
   border: solid #00FF00 1px;
+  box-shadow: 6px 7px 0px 0px rgba(1,61,1,1);
 }
 
 .form_text{
   width: 90%;
   margin: auto;
   color: #00FF00;
-  font-family: "Google Sans Code", monospace;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -324,9 +330,9 @@ h1, h2, h3, h4, h5, h6{
 form{
   width: 70%;
   margin: auto;
-  font-family: "Google Sans Code", monospace;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
   color: #00FF00;
 
@@ -339,10 +345,18 @@ form{
 
 input{
   width: 90%;
-  border-radius: 15px;
   text-align: center;
   padding: 5px;
   box-sizing: border-box;
+  background-color: black;
+  color: #00FF00;
+  border: solid #00FF00 1px;
+
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
 }
 
 textarea{
@@ -350,9 +364,17 @@ textarea{
   height: 150px;
   display: block;
   resize: none;
-  border-radius: 15px;
   padding: 15px;
   box-sizing: border-box;
+  background-color: black;
+  color: #00FF00;
+  border: solid #00FF00 1px;
+
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
 }
 
 label{
