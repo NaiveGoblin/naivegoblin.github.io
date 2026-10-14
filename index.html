@@ -1,87 +1,267 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <!-- <meta http-equiv="refresh" content="1"> -->
-    <meta charset="utf-8" />
-    <link rel='icon' type='image/png' href='media/anonymous.png'>
-    <link rel="stylesheet" href="master.css">
-    <title>NaiveGoblin - Home</title>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Freelance web developer creating websites and digital experiences.">
+    <meta name="author" content="Naive Goblin / Luis Cláudio">
+    <meta name="robots" content="index, follow">
 
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="I'm a creative web designer offering affordable, responsive websites for indie projects, games, and startups. Let’s build something cool together.">
-    <meta name="keywords" content="web designer, freelance web designer, indie game website, portfolio website, affordable website design, custom websites, startup landing page">
-    <meta name="author" content="NaiveGoblin">
-
-    <!-- Open Graph (for link previews on social media) -->
-    <meta property="og:title" content="NaiveGoblin - Web Design for Indie Projects">
-    <meta property="og:description" content="Affordable, responsive, and creative websites tailored to indie games, personal brands, and small startups.">
-    <meta property="og:image" content="https://naivegoblin.github.io//media/anonymous.png">
-    <meta property="og:url" content="https://naivegoblin.github.io/">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NaiveGoblin - Web Design for Indie Projects">
-    <meta name="twitter:description" content="Web design that doesn’t suck. Ideal for indie games, portfolios, and creative projects.">
-    <meta name="twitter:image" content="https://naivegoblin.github.io//media/anonymous.png">
+    <link rel="canonical" href="https://naivegoblin.github.io/Personal-Portfolio/">
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Mozilla+Headline:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Goblin Webcraft - Web Development & Digital Experiences</title>
+    <link rel="icon" type="image/png" href="images/Icon.png">
 
-  <body>
-    <div class="background matrix-container"><canvas id="matrix"></canvas></div>
-    <header>
-      <div class="space"></div>
-      <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contacts.html">Contacts</a>
-      </div>
+
+    <link rel="stylesheet" href="sources/style.css">
+</head>
+
+<body id="about">
+
+    <header class="Header">
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li class="Header_Spacer">|</li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="Header_Spacer">|</li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <hr>
 
-    <section id="section-home" class="section-home">
-      <h1>Changing the web one line at a time</h1>
-      <h3>--NaiveGoblin</h3>
-      <a href="contacts.html"><button class="button-50" role="button">Lets Talk</button></a>
-    </section>
 
-    <section class="Secondary_Section">
-      <h2>Recent Projects</h2>
-      <div class="Drawer">
-        <div>
-          <h4>Messaging App</h4>
-          <div class="Tag_Drawer">
-            <div style="background-color: #e82810;">Laravel</div>
-            <div style="background-color: #070d8f;">PHP</div>
-            <div style="background-color: #6e014c;">Bootstrap</div>
-            <div style="background-color: #f04c05;">HTML</div>
-          </div>
-          <p>Simple messaging app with login the interacts with a database. Done with the Laravel Framework.</p>
-          <h6><a target="_blank" href="https://github.com/NaiveGoblin/simple-cude-app">Check this project on github</a></h6>
+    <main>
+
+        <section class="Hero">
+
+            <div class="Hero_Content">
+
+                <div class="Hero_Text">
+
+                    <span class="Section_Label">01 / About</span>
+
+                    <h1>I make websites.<br>That's it.</h1>
+
+                    <p>
+                        Hey there uwu, I'm a freelance web developer from Portugal,
+                        also known as NaiveGoblin. I've been building websites
+                        for around four years, driven by a genuine passion for
+                        making things for the web.
+                    </p>
+
+                    <p>
+                        NaiveGoblin is a name I've used through my game development
+                        work, where I've spent years experimenting with games,
+                        tools, and other creative projects. While web development
+                        is my main focus professionally, that background has shaped
+                        the way I approach making things: curious, hands-on, and
+                        always willing to figure things out.
+                    </p>
+
+                    <p>
+                        I like tackling problems head first, keeping things simple,
+                        and finding solutions that work without unnecessary
+                        complexity. Good work, fair pricing, and a result you're
+                        happy with that's what matters to me.
+                    </p>
+
+                    <span class="Section_Meta">
+                        Freelancer · Portugal · Web Development
+                    </span>
+
+                    <div class="Hero_Buttons">
+                        <button
+                            type="button"
+                            onclick="window.location.href='projects.html'">
+                            View my work →
+                        </button>
+
+                        <button
+                            type="button"
+                            onclick="openContactModal()">
+                            Let's talk →
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="Hero_Visual">
+
+                    <div class="Mascot">
+                        <img src="images/Mascot.png"></img>
+                    </div>
+
+                    <div class="Tag_Groups">
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">LANGUAGES</span>
+
+                            <div class="Tags">
+                                <span>Python</span>
+                                <span>PHP</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Lua</span>
+                                <span>GDScript</span>
+                            </div>
+                        </div>
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">FRAMEWORKS</span>
+
+                            <div class="Tags">
+                                <span>Tailwind</span>
+                                <span>Pico</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">TOOL BELT</span>
+
+                            <div class="Tags">
+                                <span>Git</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">Deployment</span>
+
+                            <div class="Tags">
+                                <span>Render</span>
+                            </div>
+                        </div>
+
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">BEYOND THE WEB</span>
+
+                            <div class="Tags">
+                                <span>Game Design</span>
+                                <span>Creative Tools</span>
+                                <span>Digital Art</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="Website_Body">
+            
+            <!--
+            <div class="Gallery">
+
+                <div class="Gallery_Row Gallery_Row_1">
+                    <div class="Gallery_Images">
+                        <img src="images/Wild Trails/Wild Trails - Stage 1.png" alt="">
+                        <img src="images/Vertex/Vertex - Stage 1.png" alt="">
+                        <img src="images/image3.jpg" alt="">
+                        <img src="images/image4.jpg" alt="">
+                        <img src="images/image5.jpg" alt="">
+
+                        <img src="images/Wild Trails/Wild Trails - Stage 1.png" alt="">
+                        <img src="images/Vertex/Vertex - Stage 1.png" alt="">
+                        <img src="images/image3.jpg" alt="">
+                        <img src="images/image4.jpg" alt="">
+                        <img src="images/image5.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="Gallery_Row Gallery_Row_2">
+                    <div class="Gallery_Images">
+                        <img src="images/image5.jpg" alt="">
+                        <img src="images/image4.jpg" alt="">
+                        <img src="images/image3.jpg" alt="">
+                        <img src="images/Vertex/Vertex - Stage 1.png" alt="">
+                        <img src="images/Wild Trails/Wild Trails - Stage 1.png" alt="">
+
+                        <img src="images/image5.jpg" alt="">
+                        <img src="images/image4.jpg" alt="">
+                        <img src="images/image3.jpg" alt="">
+                        <img src="images/Vertex/Vertex - Stage 1.png" alt="">
+                        <img src="images/Wild Trails/Wild Trails - Stage 1.png"" alt="">
+                    </div>
+                </div>
+
+            </div> -->
+
+
+            <section class="Contact" id="contact">
+
+                <div class="Contact_Info">
+                    <h2>Let's talk.</h2>
+
+                    <p>
+                        Have a project in mind, an idea you want to explore,
+                        or just want to say hello?
+                    </p>
+                </div>
+
+                <div class="Contact_Actions">
+                    <a href="mailto:naivebusinessgoblin@gmail.com">
+                        naivebusinessgoblin@gmail.com
+                    </a>
+
+                    <a class="Button" type="button" onclick="openContactModal()">
+                        Send a message →
+                    </a>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer class="Footer">
+
+        <div class="Footer_Main">
+
+            <div class="Footer_Brand">
+                <h2>I build things.</h2>
+                <p>You see the results.</p>
+            </div>
+
+            <div class="Footer_Links">
+
+                <div class="Footer_Navigation">
+                    <a href="#about">About me</a>
+                    <a Href="#" onclick="openContactModal()">Contact</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+
+                <div class="Footer_Socials">
+                    <a href="https://github.com/NaiveGoblin">GitHub</a>
+                </div>
+
+            </div>
+
         </div>
 
-        <div>
-          <h4>OpenRa - Tribute Page</h4>
-          <div class="Tag_Drawer">
-            <div style="background-color: #f04c05;">HTML</div>
-            <div style="background-color: #6e014c;">Bootstrap</div>
-            <div style="background-color: #F0DB4F;">JavaScript</div>
-          </div>
-          <p>A tribute page for the OpenRa using bootstrap, responsive and optimized for mobile / smaller screens.</p>
-          <h6><a target="_blank" href="https://naivegoblin.github.io/OpenRA-Unofficial-Frontend-Website/">OpenRa Tribute Website</a></h6>
-          <h6><a target="_blank" href="https://github.com/NaiveGoblin/OpenRA-Unofficial-Frontend-Website">Check this project on github</a></h6>
-      </div>
-    </section>
+        <div class="Footer_Bottom">
+            <span>© 2026 Hold'em, One step at a time - NaiveGoblin &lt;3</span>
+            <span>Made with HTML, CSS & curiosity.</span>
+        </div>
 
-    <hr>
-    <footer>
-      <a href="https://github.com/NaiveGoblin" target="_blank"><img src="media/github.png"></a>
-      <p>I'm also here if you want uwu --</p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+
+<script src="sources/Contact Form.js"></script>
+
+</body>
+
 </html>
