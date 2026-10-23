@@ -37,6 +37,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    user-select: none;
+}
+
+input,
+textarea,
+[contenteditable="true"] {
+  user-select: text;
 }
 
 html {
@@ -1240,6 +1248,8 @@ a {
 /* Official Accounts Link */
 
 .Contact_Modal_Accounts {
+
+
     display: inline-flex;
     align-items: center;
     gap: 7px;
