@@ -415,70 +415,67 @@ a {
 }
 
 
-/* Gallery */
 
-.Gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+/* What I Do */
 
-    width: 100%;
+.What_I_Do {
+    width: min(900px, calc(100% - 40px));
+    padding: 35px 40px;
+    margin: 25px auto;
 
-    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+
+    position: relative;
 }
 
-.Gallery_Row {
-    width: 100%;
-    overflow: hidden;
+.What_I_Do h2 {
+    margin-bottom: 25px;
+
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 500;
+    letter-spacing: -0.04em;
 }
 
-.Gallery_Images {
-    display: flex;
-    gap: 15px;
+.What_I_Do h2::before {
+    content: "// ";
 
-    width: max-content;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.65em;
 }
 
-.Gallery img {
-    flex-shrink: 0;
+.What_I_Do p {
+    max-width: 760px;
+    margin-bottom: 18px;
 
-    width: auto;
-    height: 150px;
-
-    aspect-ratio: 16 / 9;
-
-    object-fit: cover;
-
-    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.8;
 }
 
-.Gallery_Row_1 .Gallery_Images {
-    animation: slideRight 60s linear infinite alternate;
+.What_I_Do p:last-child {
+    margin-bottom: 0;
+    padding-top: 15px;
+
+    color: var(--text-light);
+    border-top: 1px solid var(--border);
+
+    font-family: var(--font-mono);
+    font-size: 11px;
 }
 
-.Gallery_Row_2 .Gallery_Images {
-    animation: slideLeft 75s linear infinite alternate;
-}
-
-@keyframes slideRight {
-    from {
-        transform: translateX(-50%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideLeft {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
+@media (max-width: 600px) {
+    .What_I_Do {
+        width: calc(100% - 30px);
+        padding: 25px 22px;
     }
 }
+
+
 
 
 /* Contact */
