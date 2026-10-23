@@ -597,7 +597,7 @@ a {
 .Projects_Page,
 .Project_Page {
     width: 100%;
-    min-height: 100vh;
+    min-height: 60vh;
     padding: 140px 60px 80px;
 }
 
@@ -1234,6 +1234,51 @@ a {
     font-size: 14px;
     line-height: 1.6;
 }
+
+
+
+/* Official Accounts Link */
+
+.Contact_Modal_Accounts {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 16px;
+
+    color: var(--accent);
+
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        gap 0.2s ease;
+}
+
+.Contact_Modal_Accounts span {
+    font-size: 15px;
+    transition: transform 0.2s ease;
+}
+
+.Contact_Modal_Accounts:hover {
+    color: #b3c2ff;
+    gap: 11px;
+}
+
+.Contact_Modal_Accounts:hover span {
+    transform: translate(2px, -2px);
+}
+
+.Contact_Modal_Accounts:focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 5px;
+    border-radius: 2px;
+}
+
 
 
 /* Form */

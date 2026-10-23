@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     or just want to say hello?
                 </p>
 
+                <a class="Contact_Modal_Accounts" href="accounts.html">
+                    Explore my official accounts <span aria-hidden="true">↗</span>
+                </a>
+
             </div>
 
             <form class="Contact_Form" action="https://formsubmit.co/5c6235fb87763499c92dcf9d8063c66c" method="POST">
