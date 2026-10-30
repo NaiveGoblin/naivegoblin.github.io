@@ -1491,3 +1491,393 @@ body.modal-open {
     #imageZoomClose:hover {
         opacity: 0.7;
     }
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   GHOSTBYTE INDEX — FEATURED PROJECT
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+.Ghostbyte_Feature {
+    --gb-bg: #12090d;
+    --gb-border: #63303e;
+    --gb-red: #d94b67;
+    --gb-pink: #e87991;
+    --gb-green: #d5e99a;
+    --gb-yellow: #edbd87;
+
+    width: min(1000px, calc(100% - 40px));
+    margin: 25px auto;
+    padding: 30px 40px 15px;
+
+    color: #f5e9ec;
+    background:
+        linear-gradient(rgba(217,75,103,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(217,75,103,.045) 1px, transparent 1px),
+        var(--gb-bg);
+    background-size: 24px 24px;
+
+    border: 2px solid var(--gb-border);
+    box-shadow: 5px 5px 0 rgba(0,0,0,.3);
+}
+
+.Ghostbyte_Inner {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 25px;
+    max-width: 850px;
+    margin: auto;
+}
+
+
+/* TEXT */
+
+.Ghostbyte_Content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Ghostbyte_Eyebrow {
+    margin-bottom: 15px;
+    color: var(--gb-pink);
+    font: 20px 'VT323', monospace;
+}
+
+.Ghostbyte_Content h2 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(14px, 2.5vw, 25px);
+    line-height: 1.5;
+    letter-spacing: -1px;
+    white-space: nowrap;
+}
+
+.Ghostbyte_Content h2 span {
+    display: inline;
+    color: var(--gb-red);
+}
+
+
+
+.Ghostbyte_Description {
+    max-width: 450px;
+    margin-bottom: 17px;
+    color: #c5aab2;
+    font: 23px/1.3 'VT323', monospace;
+}
+
+
+/* TAGS */
+
+.Ghostbyte_Tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.Ghostbyte_Tags span {
+    padding: 4px 7px;
+    color: var(--gb-yellow);
+    background: #211018;
+    border: 1px solid var(--gb-border);
+    font: 15px 'VT323', monospace;
+}
+
+
+/* BUTTON */
+
+.Ghostbyte_Button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 15px;
+
+    color: #171020;
+    background: var(--gb-red);
+    border: 2px solid var(--gb-red);
+    box-shadow: 4px 4px 0 #69518d;
+
+    font: 9px/1.8 'Press Start 2P', monospace;
+    text-decoration: none;
+
+    transition: .15s ease;
+}
+
+.Ghostbyte_Button:hover {
+    background: #f18a9d;
+    border-color: #f18a9d;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #69518d;
+}
+
+.Ghostbyte_Button:focus-visible {
+    outline: 2px dashed var(--gb-yellow);
+    outline-offset: 5px;
+}
+
+.Ghostbyte_Arrow {
+    font-size: 15px;
+}
+
+.Ghostbyte_Footnote {
+    margin-top: 13px;
+    color: #92747e;
+    font: 16px 'VT323', monospace;
+}
+
+
+/* COMPUTER */
+
+.Ghostbyte_Visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 230px;
+}
+
+.Ghostbyte_Visual::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: rgba(217,75,103,.16);
+    border-radius: 50%;
+    filter: blur(30px);
+}
+
+.Ghostbyte_Computer {
+    position: relative;
+    width: 190px;
+    filter: drop-shadow(8px 9px 0 rgba(0,0,0,.3));
+    animation: Ghostbyte_Float 4s ease-in-out infinite;
+}
+
+.Ghostbyte_Monitor {
+    height: 130px;
+    padding: 10px;
+    background: #777087;
+    border: 4px solid #aaa0bd;
+    box-shadow: inset -6px -6px 0 #51475f, inset 5px 5px 0 #d0c6dc;
+}
+
+.Ghostbyte_Screen {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #171321;
+    border: 4px solid #43364f;
+}
+
+.Ghostbyte_Screen_Logo {
+    color: var(--gb-green);
+    font: 32px 'Press Start 2P', monospace;
+    text-shadow: 4px 4px 0 #50633a;
+}
+
+.Ghostbyte_Loading {
+    width: 90px;
+    height: 6px;
+    background: #43364f;
+}
+
+.Ghostbyte_Loading span {
+    display: block;
+    width: 67%;
+    height: 100%;
+    background: var(--gb-green);
+}
+
+.Ghostbyte_Ready {
+    color: var(--gb-green);
+    font: 14px 'VT323', monospace;
+}
+
+.Ghostbyte_Neck {
+    width: 45px;
+    height: 15px;
+    margin: auto;
+    background: #777087;
+}
+
+.Ghostbyte_Base {
+    width: 90px;
+    height: 10px;
+    margin: auto;
+    background: #aaa0bd;
+    border-bottom: 4px solid #51475f;
+}
+
+
+/* DECORATIONS */
+
+.Ghostbyte_Floating {
+    position: absolute;
+    font-size: 24px;
+    animation: Ghostbyte_Float 3s ease-in-out infinite;
+}
+
+.Ghostbyte_Star {
+    top: 15px;
+    right: 10px;
+    color: var(--gb-yellow);
+}
+
+.Ghostbyte_Diamond {
+    top: 65px;
+    left: 5px;
+    color: var(--gb-red);
+    animation-delay: -1s;
+}
+
+.Ghostbyte_Sparkle {
+    right: 10px;
+    bottom: 20px;
+    color: var(--gb-pink);
+    animation-delay: -2s;
+}
+
+.Ghostbyte_Visual_Label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: var(--gb-green);
+    font: 17px 'VT323', monospace;
+}
+
+.Ghostbyte_Status_Dot {
+    width: 8px;
+    height: 8px;
+    background: var(--gb-green);
+    box-shadow: 0 0 9px rgba(213,233,154,.5);
+    animation: Ghostbyte_Blink 1.6s steps(2,start) infinite;
+}
+
+
+/* FOOTER STRIP */
+
+.Ghostbyte_Bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 25px;
+    padding-top: 13px;
+    border-top: 1px solid var(--gb-border);
+    color: #92747e;
+    font: 15px 'VT323', monospace;
+    letter-spacing: 1px;
+}
+
+.Ghostbyte_Bottom_Divider {
+    width: 4px;
+    height: 4px;
+    background: var(--gb-red);
+}
+
+
+/* ANIMATIONS */
+
+@keyframes Ghostbyte_Float {
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes Ghostbyte_Blink {
+    to { opacity: .25; }
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+    .Ghostbyte_Feature {
+        padding: 28px 25px 15px;
+    }
+
+    .Ghostbyte_Inner {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .Ghostbyte_Content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .Ghostbyte_Description {
+        max-width: 500px;
+    }
+
+    .Ghostbyte_Tags {
+        justify-content: center;
+    }
+
+    .Ghostbyte_Visual {
+        min-height: 210px;
+    }
+}
+
+@media (max-width: 420px) {
+    .Ghostbyte_Feature {
+        width: calc(100% - 30px);
+        padding: 25px 16px 13px;
+    }
+
+    .Ghostbyte_Content h2 {
+        font-size: 19px;
+    }
+
+    .Ghostbyte_Description {
+        font-size: 21px;
+    }
+
+    .Ghostbyte_Button {
+        font-size: 8px;
+        padding: 10px;
+    }
+
+    .Ghostbyte_Bottom {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .Ghostbyte_Bottom_Divider {
+        display: none;
+    }
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .Ghostbyte_Feature *,
+    .Ghostbyte_Feature *::before,
+    .Ghostbyte_Feature *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
