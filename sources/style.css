@@ -707,15 +707,6 @@ a {
     transform: scale(1.03);
 }
 
-.Project_Number {
-    margin-bottom: 10px;
-
-    color: var(--text-dim);
-
-    font-family: var(--font-mono);
-    font-size: 10px;
-}
-
 .Project_Card h2 {
     margin-bottom: 12px;
 
