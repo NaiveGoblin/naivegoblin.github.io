@@ -1497,3 +1497,45 @@ a {
         width: calc(100% - 30px);
     }
 }
+
+
+
+
+.github-graph {
+    width: min(900px, calc(100% - 40px));
+    margin: 25px auto;
+    padding: 24px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-hover) transparent;
+}
+
+
+.github-graph img {
+    display: block;
+    width: 100%;
+    min-width: 550px;
+    height: auto;
+
+    /* Darken background and recolor contributions */
+    filter:
+        invert(1)
+        hue-rotate(180deg)
+        saturate(0.8)
+        brightness(0.85);
+
+    opacity: 0.9;
+}
+
+
+@media (max-width: 600px) {
+    .github-graph {
+        width: calc(100% - 30px);
+        padding: 16px;
+    }
+}
