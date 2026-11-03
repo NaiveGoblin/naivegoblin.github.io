@@ -4,18 +4,18 @@
 /* Variables */
 
 :root {
-    --bg: #0b0b0b;
-    --surface: #151515;
-    --surface-hover: #181818;
+    --bg: #090b12;
+    --surface: #111522;
+    --surface-hover: #171d2e;
 
-    --border: #292929;
-    --border-hover: #444;
+    --border: #242c42;
+    --border-hover: #39496e;
 
-    --text: #fff;
-    --text-light: #ddd;
-    --text-muted: #888;
-    --text-dim: #666;
-    --text-dark: #555;
+    --text: #f4f6ff;
+    --text-light: #dce2f5;
+    --text-muted: #929bb5;
+    --text-dim: #68738f;
+    --text-dark: #4b5670;
 
     --accent: #8da4ff;
 
@@ -1501,6 +1501,7 @@ a {
 
 
 
+
 .github-graph {
     width: min(900px, calc(100% - 40px));
     margin: 25px auto;
@@ -1512,9 +1513,7 @@ a {
 
     overflow-x: auto;
     scrollbar-width: thin;
-    scrollbar-color: var(--border-hover) transparent;
 }
-
 
 .github-graph img {
     display: block;
@@ -1522,16 +1521,52 @@ a {
     min-width: 550px;
     height: auto;
 
-    /* Darken background and recolor contributions */
-    filter:
-        invert(1)
-        hue-rotate(180deg)
-        saturate(0.8)
-        brightness(0.85);
-
+    filter: invert(1) hue-rotate(180deg);
     opacity: 0.9;
 }
 
+/* Profile Button */
+
+.github-profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: fit-content;
+    margin: 22px auto 0;
+    padding: 11px 20px;
+
+    color: var(--text-light);
+    background: var(--bg);
+
+    border: 1px solid var(--border-hover);
+    border-radius: var(--radius-md);
+
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.github-profile-button span {
+    color: var(--accent);
+    transition: transform 0.25s ease;
+}
+
+.github-profile-button:hover {
+    color: var(--text);
+    background: var(--surface-hover);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.github-profile-button:hover span {
+    transform: translate(3px, -3px);
+}
 
 @media (max-width: 600px) {
     .github-graph {
@@ -1539,3 +1574,4 @@ a {
         padding: 16px;
     }
 }
+
