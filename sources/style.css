@@ -256,6 +256,12 @@ a {
     letter-spacing: -0.045em;
 }
 
+.Hero_Text h1 .Hero_Accent {
+    display: inline-block;
+    color: var(--accent);
+    text-shadow: 0 0 30px rgba(141, 164, 255, 0.18);
+}
+
 .Hero_Text p {
     max-width: 520px;
     margin-bottom: 16px;
