@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="ポルトガルを拠点に活動するフリーランスWeb開発者。Webサイトやデジタル体験を制作しています。">
+    <meta name="author" content="NaiveGoblin">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://naivegoblin.github.io/ja/">
+
+    <link rel="alternate" hreflang="en"
+          href="https://naivegoblin.github.io/">
+    <link rel="alternate" hreflang="ja"
+          href="https://naivegoblin.github.io/ja/">
+    <link rel="alternate" hreflang="x-default"
+          href="https://naivegoblin.github.io/">
+
+    <title>Goblin Webcraft - Web開発とデジタル体験</title>
+
+    <link rel="icon" type="image/png" href="../images/icons/Icon.png">
+
+    <link rel="stylesheet" href="../sources/style.css">
+    <link rel="stylesheet" href="../sources/ghostbyte-popup.css">
+    <link rel="stylesheet" href="../sources/contact-modal.css">
+
+    <!-- Japanese font support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Manrope', sans-serif;
+        }
+
+        .Hero_Text h1 {
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+        }
+
+        .Hero_Text p,
+        .What_I_Do p,
+        .Contact_Info p {
+            line-height: 1.9;
+        }
+
+        .Header_Spacer {
+            margin-inline: 18px;
+        }
+
+        @media (max-width: 600px) {
+            .Header a {
+                font-size: 12px;
+                padding: 6px 5px;
+            }
+
+            .Header_Spacer {
+                margin-inline: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body id="about">
+
+    <header class="Header">
+        <nav>
+            <ul>
+                <li><a href="/ja/">プロフィール</a></li>
+                <li class="Header_Spacer">|</li>
+                <li><a href="/ja/projects.html">制作実績</a></li>
+                <li class="Header_Spacer">|</li>
+                <li><a href="/ja/accounts.html">公式アカウント</a></li>
+                <li class="Header_Spacer">|</li>
+                <li><a href="/ja/blog.html">ブログ</a></li>
+                <li class="Header_Spacer">|</li>
+                <li>
+                    <a href="/" data-language-switch>English</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="Hero">
+            <div class="Hero_Content">
+
+                <div class="Hero_Text">
+
+                    <h1>
+                        Webサイトを作ります。<br>
+                        <span class="Hero_Accent">心を込めて。</span>
+                    </h1>
+
+                    <p>
+                        こんにちは！uwu
+                        ポルトガルを拠点に活動しているフリーランスのWeb開発者、
+                        NaiveGoblinです。
+                        約4年間Webサイトを制作しており、
+                        Webでものづくりをすることが大好きです。
+                    </p>
+
+                    <p>
+                        NaiveGoblinという名前は、ゲーム開発を始めとする
+                        さまざまな創作活動でも使っています。
+                        これまでゲームやツールなど、いろいろなものを
+                        試行錯誤しながら作ってきました。
+                        現在はWeb開発を主な仕事としていますが、
+                        そうした経験が今のものづくりの姿勢につながっています。
+                    </p>
+
+                    <p>
+                        問題に正面から取り組み、できるだけシンプルで
+                        実用的な解決策を見つけることを大切にしています。
+                        良い仕事、適正な価格、そしてお客様に満足していただける結果。
+                        それが私にとって一番大切なことです。
+                    </p>
+
+                    <span class="Section_Meta">
+                        フリーランス · ポルトガル · Web開発
+                    </span>
+
+                    <div class="Hero_Buttons">
+
+                        <button type="button"
+                            onclick="window.location.href='/ja/projects.html'">
+                            制作実績を見る →
+                        </button>
+
+                        <button type="button"
+                            onclick="openContactModal()">
+                            お問い合わせ →
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="Hero_Visual">
+
+                    <div class="Mascot">
+                        <img src="../images/Mascot.png" alt="NaiveGoblinのマスコット">
+                    </div>
+
+                    <div class="Tag_Groups">
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">プログラミング言語</span>
+                            <div class="Tags">
+                                <span>Python</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Lua</span>
+                                <span>GDScript</span>
+                            </div>
+                        </div>
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">フレームワーク</span>
+                            <div class="Tags">
+                                <span>Tailwind</span>
+                                <span>Pico</span>
+                                <span>Bootstrap</span>
+                                <span>ThreeJS</span>
+                            </div>
+                        </div>
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">ツール</span>
+                            <div class="Tags">
+                                <span>Git</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">デプロイ・公開</span>
+                            <div class="Tags">
+                                <span>Render</span>
+                                <span>Netlify</span>
+                            </div>
+                        </div>
+
+                        <div class="Tag_Group">
+                            <span class="Tag_Label">Web以外の活動</span>
+                            <div class="Tags">
+                                <span>ゲームデザイン</span>
+                                <span>クリエイティブツール</span>
+                                <span>デジタルアート</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="github-graph">
+            <img
+                src="https://ghchart.rshah.org/8da4ff/NaiveGoblin"
+                alt="NaiveGoblinのGitHubコントリビューション"
+            >
+
+            <a class="github-profile-button"
+                href="https://github.com/NaiveGoblin"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHubプロフィールを見る
+                <span>↗</span>
+            </a>
+        </div>
+
+        <!-- GHOSTBYTE INDEX FEATURE -->
+
+        <section class="Ghostbyte_Feature">
+
+            <div class="Ghostbyte_Inner">
+
+                <div class="Ghostbyte_Content">
+
+                    <span class="Ghostbyte_Eyebrow">
+                        ✦ &nbsp; 制作した小さなプロジェクト
+                    </span>
+
+                    <h2>
+                        GHOSTBYTE
+                        <span>INDEX.</span>
+                    </h2>
+
+                    <p class="Ghostbyte_Description">
+                        無料で使えるオープンソースソフトウェアを紹介する
+                        小さなWebサイトです。
+                        クリエイティブ、仕事効率化、開発など、
+                        さまざまな用途のツールを見つけることができます。
+                    </p>
+
+                    <div class="Ghostbyte_Tags">
+                        <span>オープンソース</span>
+                        <span>ソフトウェア一覧</span>
+                        <span>無料で利用可能</span>
+                    </div>
+
+                    <a href="https://ghostbyteindex.netlify.app/"
+                        class="Ghostbyte_Button"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span>▶</span>
+                        INDEXを見る
+                        <span class="Ghostbyte_Arrow">↗</span>
+                    </a>
+
+                    <span class="Ghostbyte_Footnote">
+                        好奇心と少しのピクセルから生まれました。
+                    </span>
+
+                </div>
+
+                <div class="Ghostbyte_Visual">
+
+                    <span class="Ghostbyte_Floating Ghostbyte_Star">✦</span>
+                    <span class="Ghostbyte_Floating Ghostbyte_Diamond">◆</span>
+                    <span class="Ghostbyte_Floating Ghostbyte_Sparkle">✧</span>
+
+                    <div class="Ghostbyte_Computer">
+
+                        <div class="Ghostbyte_Monitor">
+
+                            <div class="Ghostbyte_Screen">
+
+                                <span class="Ghostbyte_Screen_Logo">P_</span>
+
+                                <div class="Ghostbyte_Loading">
+                                    <span></span>
+                                </div>
+
+                                <span class="Ghostbyte_Ready">
+                                    探索の準備完了
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="Ghostbyte_Neck"></div>
+                        <div class="Ghostbyte_Base"></div>
+
+                    </div>
+
+                    <div class="Ghostbyte_Visual_Label">
+                        <span class="Ghostbyte_Status_Dot"></span>
+                        システム稼働中
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="Ghostbyte_Bottom">
+
+                <span>個人プロジェクト</span>
+                <div class="Ghostbyte_Bottom_Divider"></div>
+
+                <span>無料ソフトウェア</span>
+                <div class="Ghostbyte_Bottom_Divider"></div>
+
+                <span>すべての人のために</span>
+
+            </div>
+
+        </section>
+
+        <section class="Website_Body">
+
+            <section class="What_I_Do">
+
+                <h2>どんなことをしているの？</h2>
+
+                <p>
+                    インターネットに長く触れてきたこともあり、
+                    少し工夫すれば、いろいろなものを作ることができます。
+                    仕事として特に得意なのはWeb開発、
+                    なかでもフロントエンド開発と静的Webサイトの制作です。
+                    ランディングページ、スタートアップ向けサイト、
+                    ソフトウェアや個人向けのWebページなどを制作しています。
+                    ご希望に応じてホスティングも対応可能です。
+                </p>
+
+                <p>
+                    動画、音声、画像編集にも取り組んでいます。
+                    また、GDScriptやPythonを中心としたスクリプト開発も
+                    ご依頼に応じて対応しています。
+                    ほかにもできることはいろいろあります！
+                    ぜひ制作実績をご覧ください。
+                    サービスがお役に立ちそうでしたら、
+                    メールやSNSからお気軽にご連絡ください。
+                    ご予算やご希望に合わせて、一緒に最適な方法を考えましょう。
+                </p>
+
+                <p>
+                    ※ お急ぎの場合は、メールでのご連絡が最も早く返信できます。
+                </p>
+
+            </section>
+
+            <section class="Contact" id="contact">
+
+                <div class="Contact_Info">
+
+                    <h2>お話ししましょう。</h2>
+
+                    <p>
+                        制作したいものや、実現したいアイデアはありますか？
+                        あるいは、ちょっと挨拶してみたいだけでも大歓迎です！
+                    </p>
+
+                </div>
+
+                <div class="Contact_Actions">
+
+                    <a href="mailto:naivebusinessgoblin@gmail.com">
+                        naivebusinessgoblin@gmail.com
+                    </a>
+
+                    <a class="Button" type="button"
+                        onclick="openContactModal()">
+                        メッセージを送る →
+                    </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="Footer">
+
+        <div class="Footer_Main">
+
+            <div class="Footer_Brand">
+                <h2>ものを作ります。</h2>
+                <p>その結果をお届けします。</p>
+            </div>
+
+            <div class="Footer_Links">
+
+                <div class="Footer_Navigation">
+                    <a href="/ja/">プロフィール</a>
+                    <a href="#contact" onclick="openContactModal()">お問い合わせ</a>
+                    <a href="/ja/projects.html">制作実績</a>
+                    <a href="/ja/accounts.html">公式アカウント</a>
+                </div>
+
+                <div class="Footer_Socials">
+                    <a href="/ja/blog.html">ブログ</a>
+                    <a href="https://github.com/NaiveGoblin"
+                        target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://naivegoblin.itch.io/"
+                        target="_blank" rel="noopener noreferrer">Itch.io</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="Footer_Bottom">
+            <span>© 2026 Hold'em, One step at a time - NaiveGoblin &lt;3</span>
+            <span>HTML、CSS、そして好奇心で制作。</span>
+        </div>
+
+    </footer>
+
+    <script src="../sources/Contact Form.js"></script>
+    <script src="/sources/language-switch.js"></script>
+
+</body>
+</html>
